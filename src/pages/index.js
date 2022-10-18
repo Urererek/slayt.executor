@@ -1,147 +1,58 @@
-import * as React from 'react';
+<!DOCTYPE html>
+<html>
+ 
+<head>
+ 
+ 
+    <!-- CARD CARD CARD CARD CARD------------------------->
 
-import AttributeGrid from '../components/AttributeGrid';
-import Container from '../components/Container';
-import Hero from '../components/Hero';
-import BlogPreviewGrid from '../components/BlogPreviewGrid';
-import Highlight from '../components/Highlight';
-import Layout from '../components/Layout/Layout';
-import ProductCollectionGrid from '../components/ProductCollectionGrid';
-import ProductCardGrid from '../components/ProductCardGrid';
-import Quote from '../components/Quote';
-import Title from '../components/Title';
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download now the new Best Mods, called FerestZ, created in 2021. Have fun Modding with FerestZ!">
+    <meta name="keywords" content="hacker, best, arceusx, ferestz, roblox, hack, client, apk, download, android, amongus hack, hack, free, ferestz">
+    <meta name="page-topic" content="game">
+    <meta name="page-type" content="Software Download">
+    <meta name="audience" content="Alle">
+    <link rel="shortcut icon" href="https://ferestz.netlify.app/favicon/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/948832261917274152/1000389708980961341/SPOILER_IMG_20220722_134011.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/948832261917274152/1000389708980961341/SPOILER_IMG_20220722_134011.png" sizes="96x96">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.discordapp.com/attachments/948832261917274152/1000389708980961341/SPOILER_IMG_20220722_134011.png">
+    <meta name="msapplication-TileColor" content="#9403fc">
+    <meta name="msapplication-TileImage" content="favicon/favicon_144x.png">
 
-import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
+    <meta name="color-scheme" content="light dark">
 
-import * as styles from './index.module.css';
-import { Link, navigate } from 'gatsby';
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-const IndexPage = () => {
-  const newArrivals = generateMockProductData(3, 'shirt');
-  const blogData = generateMockBlogData(3);
-
-  const goToShop = () => {
-    navigate('/shop');
-  };
-
-  return (
-    <Layout disablePaddingBottom>
-      {/* Hero Container */}
-      <Hero
-        maxWidth={'500px'}
-        image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
-        ctaAction={goToShop}
-      />
-
-      {/* Message Container */}
-      <div className={styles.messageContainer}>
-        <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
-        </p>
-        <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
-        </p>
-      </div>
-
-      {/* Collection Container */}
-      <div className={styles.collectionContainer}>
-        <Container size={'large'}>
-          <Title name={'New Collection'} />
-          <ProductCollectionGrid />
-        </Container>
-      </div>
-
-      {/* New Arrivals */}
-      <div className={styles.newArrivalsContainer}>
-        <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
-          <ProductCardGrid
-            spacing={true}
-            showSlider
-            height={480}
-            columns={3}
-            data={newArrivals}
-          />
-        </Container>
-      </div>
-
-      {/* Highlight  */}
-      <div className={styles.highlightContainer}>
-        <Container size={'large'} fullMobile>
-          <Highlight
-            image={'/highlight.png'}
-            altImage={'highlight image'}
-            miniImage={'/highlightmin.png'}
-            miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
-            textLink={'shop now'}
-            link={'/shop'}
-          />
-        </Container>
-      </div>
-
-      {/* Promotion */}
-      <div className={styles.promotionContainer}>
-        <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
-        <div className={styles.linkContainers}>
-          <Link to={'/shop'}>WOMAN</Link>
-          <Link to={'/shop'}>MAN</Link>
+    <!-----------------------------------------------------> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1276508484736308" crossorigin="anonymous"></script>
+    <title>Slayt | Mods & Exploit</title>
+</head>
+ 
+<body>
+    <div class="loader">
+ 
+        <div>
+            <div>
+                <img class="jaok" width="60px" src="./1661374507174.png" alt="">
+            </div>
         </div>
-      </div>
+    </div>
+    <div class="content">
 
-      {/* Quote */}
-      <Quote
-        bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
-        quote={
-          '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
-        }
-      />
 
-      {/* Blog Grid */}
-      <div className={styles.blogsContainer}>
-        <Container size={'large'}>
-          <Title name={'Journal'} subtitle={'Notes on life and style'} />
-          <BlogPreviewGrid data={blogData} />
-        </Container>
-      </div>
+    <!-- NAVIGATION MENU -->
 
-      {/* Promotion */}
-      <div className={styles.sustainableContainer}>
-        <Hero
-          image={'/banner3.png'}
-          title={'We are Sustainable'}
-          subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
-          }
-          ctaText={'read more'}
-          maxWidth={'660px'}
-          ctaStyle={styles.ctaCustomButton}
-        />
-      </div>
+    <img src="https://media.discordapp.net/attachments/1011572251000324179/1027561653857943562/1665060110572.png" width="205px" style="position: fixed; z-index: 50; left: 0; top: 0;" alt="">
 
-      {/* Social Media */}
-      <div className={styles.socialContainer}>
-        <Title
-          name={'Styled by You'}
-          subtitle={'Tag @sydney to be featured.'}
-        />
-        <div className={styles.socialContentGrid}>
-          <img src={`/social/socialMedia1.png`} alt={'social media 1'} />
-          <img src={`/social/socialMedia2.png`} alt={'social media 2'} />
-          <img src={`/social/socialMedia3.png`} alt={'social media 3'} />
-          <img src={`/social/socialMedia4.png`} alt={'social media 4'} />
-        </div>
-      </div>
-      <AttributeGrid />
-    </Layout>
-  );
-};
-
-export default IndexPage;
+    <a href="">
+      <img src="https://media.discordapp.net/attachments/948832261917274152/1027568493991837737/Picsart_22-10-06_15-09-58-687.png" width="150px" style="position: fixed; 
+ left: 50%; z-index: 53;
+ transform: translate(-50%); top: -40px;" alt="">
+        </a>
+        <img src="https://media.discordapp.net/attachments/1011572251000324179/1027561654101229628/1665060124349.png" width="205px" style="position: fixed; z-index: 50; right: 0; top: 0;" alt="">
+</html>
